@@ -1,58 +1,119 @@
-# Shan's CheetCode
+<div align="center">
 
-A real-time AI assistant that provides contextual help during video calls, interviews, presentations, and meetings using screen capture and audio analysis.
+# ⚡ Shan's CheetCode
 
-> [!NOTE]
-> Use latest macOS and Windows version, older versions have limited support
+### Your Real-Time AI Interview & Meeting Copilot
 
-> [!NOTE]
-> During testing it won't answer if you ask something directly — you need to simulate an interviewer asking a question, which it will answer
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Electron](https://img.shields.io/badge/Electron-30.x-47848F?logo=electron&logoColor=white)](https://www.electronjs.org/)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-Native_Audio-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
+[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey)]()
 
-## Features
+<br/>
 
-- **Live AI Assistance**: Real-time help powered by Google Gemini 2.0 Flash Live
-- **Screen & Audio Capture**: Analyzes what you see and hear for contextual responses
-- **Multiple Profiles**: Interview, Sales Call, Business Meeting, Presentation, Negotiation
-- **Transparent Overlay**: Always-on-top window that can be positioned anywhere
-- **Click-through Mode**: Make window transparent to clicks when needed
-- **Cross-platform**: Works on macOS, Windows, and Linux
+> **A stealth desktop overlay that listens, watches, and thinks — in real time.**
+> Captures system audio + screen, understands context through Gemini's native multimodal AI,
+> and delivers instant, actionable answers right on your screen.
 
-## Setup
+<br/>
 
-1. **Get a Gemini API Key**: Visit [Google AI Studio](https://aistudio.google.com/apikey)
-2. **Install Dependencies**: `npm install`
-3. **Run the App**: `npm start`
+</div>
 
-## Usage
+---
 
-1. Enter your Gemini API key in the main window
-2. Choose your profile and language in settings
-3. Click "Start Session" to begin
-4. Position the window using keyboard shortcuts
-5. The AI will provide real-time assistance based on your screen and audio
+## ✨ Features
 
-## Keyboard Shortcuts
+| Feature | Description |
+|---------|-------------|
+| **Live AI Assistance** | Powered by Gemini 2.5 Flash with native audio understanding — no separate transcription step |
+| **System Audio Capture** | Hears everything your speakers play (interviewer's voice, meeting audio, presentations) |
+| **Screen Analysis** | Reads your screen for additional context — code editors, slides, documents |
+| **Stealth Overlay** | Frameless, always-on-top, click-through transparent window |
+| **Multiple Profiles** | Interview · Sales Call · Business Meeting · Presentation · Negotiation |
+| **Local AI Mode** | Fully offline with Ollama + Whisper — no data leaves your machine |
+| **Cross-Platform** | macOS, Windows, and Linux support |
 
-- **Window Movement**: `Ctrl/Cmd + Arrow Keys` - Move window
-- **Click-through**: `Ctrl/Cmd + M` - Toggle mouse events
-- **Close/Back**: `Ctrl/Cmd + \` - Close window or go back
-- **Send Message**: `Enter` - Send text to AI
+---
 
-## Audio Capture
+## 🚀 Quick Start
 
-- **macOS**: [SystemAudioDump](https://github.com/Mohammed-Yasin-Mulla/Sound) for system audio
-- **Windows**: Loopback audio capture
-- **Linux**: Microphone input
+```bash
+# 1. Clone the repo
+git clone https://github.com/Shantanu-9901/Shans-CheetCode.git
+cd Shans-CheetCode
 
-## Requirements
+# 2. Install dependencies
+npm install
 
-- Electron-compatible OS (macOS, Windows, Linux)
-- Gemini API key
-- Screen recording permissions
-- Microphone/audio permissions
+# 3. Launch
+npm start
+```
 
-## License
+**First run:**
+1. Grab a free Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
+2. Paste it in the app
+3. Pick your profile & language
+4. Hit **Start Session** — done.
 
-GPL-3.0 — See [LICENSE](LICENSE) for details.
+---
 
-Built by Shantanu.
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl/Cmd + ←↑→↓` | Move overlay window |
+| `Ctrl/Cmd + M` | Toggle click-through mode |
+| `Ctrl/Cmd + \` | Close window / Go back |
+| `Enter` | Send a text message to AI |
+
+---
+
+## 🎧 Audio Capture
+
+| Platform | Method |
+|----------|--------|
+| **macOS** | SystemAudioDump (built-in binary, requires macOS 15+) |
+| **Windows** | Loopback audio via `getDisplayMedia` |
+| **Linux** | Microphone input |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework** — Electron 30
+- **AI Engine** — Google Gemini 2.5 Flash (native audio preview)
+- **UI** — LitElement web components
+- **Local AI** — Ollama + Whisper (optional)
+- **Build** — Electron Forge
+
+---
+
+## 📋 Requirements
+
+- macOS 13+ / Windows 10+ / Linux
+- [Node.js](https://nodejs.org/) 18+
+- Gemini API key (free tier works)
+- Screen recording & microphone permissions
+
+---
+
+## 🔒 Privacy
+
+- **BYOK (Bring Your Own Key)** — your API key, your data
+- **Local mode available** — run fully offline with Ollama
+- **No telemetry** — zero data collection, no analytics, no tracking
+- Audio is streamed directly to Gemini and never stored
+
+---
+
+## 📄 License
+
+Released under the [GPL-3.0 License](LICENSE).
+
+---
+
+<div align="center">
+
+**Built with ❤️ by Shantanu**
+
+</div>
